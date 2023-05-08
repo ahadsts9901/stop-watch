@@ -1,5 +1,5 @@
 * {
-    font-family: 'Poppins', 'sans-serif';
+    font-family: "Poppins", "sans-serif";
     font-weight: 600;
 }
 
@@ -15,12 +15,21 @@ body {
 }
 
 .watch {
-    width: 30em;
+    width: 90%;
     height: 15em;
     border: 2px dashed #fff;
     border-radius: 60px;
     background-color: #151515;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #999;
+}
+
+#result {
+    color: #fff;
+    font-size: 4em;
 }
 
 buttons {
@@ -28,6 +37,14 @@ buttons {
     justify-content: center;
     align-items: center;
     padding: 0.2em 0.5em;
+    column-gap: 1em;
+}
+
+row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
     column-gap: 2em;
 }
 
@@ -39,6 +56,7 @@ buttons {
     border: 0px;
     border-radius: 15px;
     font-size: 1.2em;
+    box-shadow: 0px 0px 5px #999;
 }
 
 .center {
@@ -48,40 +66,8 @@ buttons {
     margin: 3em 0em 2em 0em;
 }
 
-@media only screen and (max-width : 520px) {
-
-
-    .watch {
-        width: 23em;
+@media only screen and (max-width: 520px) {
+    buttons {
+        flex-direction: column;
     }
-
-    .button {
-        font-size: 1em;
-    }
-
-
-}
-
-@media only screen and (max-width : 420px) {
-
-
-    .watch {
-        width: 20em;
-    }
-
-
-}
-
-@media only screen and (max-width : 360px) {
-
-
-    .watch {
-        width: 15em;
-    }
-
-    .button {
-        font-size: 0.8em;
-    }
-
-
 }
