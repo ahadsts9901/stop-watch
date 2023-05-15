@@ -6,6 +6,7 @@ function start() {
     time = setInterval(updatedTime, 10);
     document.getElementById("result").innerHTML = time;
     // console.log(time);
+    document.getElementById("start").disabled = true;
 }
 
 function stop() {
@@ -13,15 +14,11 @@ function stop() {
     let stopTime = (Date.now() - startTime) / 1000;
     document.getElementById("result").innerHTML = stopTime.toFixed(2);
     // console.log("Elapsed time: " + stopTime.toFixed(2) + " seconds");
+    document.getElementById("start").disabled = false;
 }
 
 function updatedTime() {
     let stopTime = (Date.now() - startTime) / 1000;
     document.getElementById("result").innerHTML = stopTime.toFixed(2);
     // console.log(stopTime.toFixed(2));
-}
-
-function reset() {
-    document.getElementById("result").innerHTML = "00";
-    // console.log('00);
 }
